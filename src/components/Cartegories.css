@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin: 2rem auto;
+}
+
+.cartegory {
+  font-size: larger;
+  color: slategray;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0.5rem;
+}
