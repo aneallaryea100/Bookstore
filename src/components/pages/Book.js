@@ -9,11 +9,15 @@ const Book = (props) => {
     <div>
       <ul>
         {bookItem.map((item) => (
-          <BookList
-            key={item.id}
-            title={item.title}
-            author={item.author}
-          />
+          <>
+            <BookList
+              key={item.id}
+              title={item.title}
+              author={item.author}
+            />
+            <button type="button">delete</button>
+
+          </>
         ))}
       </ul>
       <AddBook />

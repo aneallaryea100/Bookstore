@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => (
   <div className="navBarContainer">
@@ -9,7 +10,7 @@ const Navbar = () => (
       <NavLink to="/" className="bookNavs">Books</NavLink>
       <NavLink to="cartegories" className="cartegoryNavs">Cartegories</NavLink>
     </div>
-    <div><p>Icon</p></div>
+    <div><FaUser /></div>
   </div>
 );
 
