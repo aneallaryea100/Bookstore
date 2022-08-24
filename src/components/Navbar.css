@@ -1,0 +1,13 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.logoSectionBook {
+  display: flex;
+}
+
+.logoSectionBook p {
+  margin: 0 0.5rem;
+}
