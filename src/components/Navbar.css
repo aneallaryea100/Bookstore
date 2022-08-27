@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  border: 1px solid gray;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.logoBook {
+  color: lightskyblue;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .logoSectionBook {
@@ -10,4 +18,28 @@
 
 .logoSectionBook p {
   margin: 0 0.5rem;
+}
+
+.bookNavs {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.cartegoryNavs {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 0 1rem;
+}
+
+.iconny {
+  color: lightskyblue;
+  padding: 0.5rem;
+  border: 0.01rem solid gray;
+  border-radius: 50%;
+  cursor: pointer;
 }
