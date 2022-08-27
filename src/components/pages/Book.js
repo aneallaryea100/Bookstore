@@ -1,32 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { loadBook } from '../../redux/books/books';
 import AddBook from '../AddBook';
 import BookList from '../BookList';
 
-const Book = (props) => {
-  const { bookItem } = props;
+const Book = () => {
+  const item = useSelector((state) => state.books);
+  const vitor = useDispatch();
+  useEffect(() => {
+    vitor(loadBook());
+  }, []);
   return (
-    <div>
-      <ul>
-        {bookItem.map((item) => (
-          <>
-            <BookList
-              key={item.id}
-              title={item.title}
-              author={item.author}
-            />
-            <button type="button">delete</button>
-
-          </>
+    <>
+      <div>
+        {item.item.map((data) => (
+          <BookList
+            key={data.id}
+            id={data.id}
+            title={data.title}
+            author={data.author}
+          />
         ))}
-      </ul>
+      </div>
       <AddBook />
-    </div>
+    </>
   );
-};
-
-Book.propTypes = {
-  bookItem: PropTypes.string.isRequired,
 };
 
 export default Book;
